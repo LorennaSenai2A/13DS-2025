@@ -2,7 +2,15 @@
     
     & a{
         display:flex;
-        align-items:center;
         justify-content:center;
+        align-items:center;
+
+        padding: 24px;
+        gap: 16px;
+        font-size: 24px;
+
+        & {
+            text-decoration: none;
+        }
     }
 }

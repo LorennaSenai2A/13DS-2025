@@ -1,5 +1,6 @@
 import "./App.css";
-import foto from "./img/chococatColor.jpg";
+import fotoDark from "./img/chococatColor.jpg";
+import fotoLight from "./img/myMellodyColor.jpg";
 
 
 import Perfil from "./components/perfil/perfil"
@@ -17,9 +18,16 @@ const troca = () => {
 }
 
   return (
-<div id="App" className={isLight && "light"}>
-   <Perfil fotoPerfil={foto}>@ElLorennaXD</Perfil>
+<div id="App" className={isLight ? "light" : ""}>
+
+<div id="container">
+
+   <Perfil fotoPerfil={isLight ? fotoLight : fotoDark }>
+    @ElLorennaXD</Perfil>
+
    <Switch troca={troca} isLight={isLight}/>
+
+ <div id="links">
 
    <ul>
    <Links links={"https://github.com/LorennaSenai2A"}>GitHub</Links>
@@ -27,6 +35,8 @@ const troca = () => {
    <Links links={"https://www.figma.com/design/ePEmC8G8cGb1xnF7p84xAY/Primeiro-App?node-id=0-1&p=f&t=mbr5fodB3azEoQN6-0"}>Figma</Links>
    <Links links={"https://br.pinterest.com/loreninhazanon/"}>Pinterest</Links>
    </ul>
+</div>
+</div>
 
 <div id="socialLinks">
   <SocialLinks 
