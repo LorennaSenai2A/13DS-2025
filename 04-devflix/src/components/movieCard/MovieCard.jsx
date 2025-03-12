@@ -8,7 +8,7 @@ const MovieCard = (props) => {
     </div>
     
     <img src={props.Poster} alt="" />
-  <h4>{props.Type}</h4>
+  <span>{props.Type}</span>
     <h3>{props.Title}</h3>
   </div>
   );
