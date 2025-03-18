@@ -54,7 +54,7 @@ e.key === "Enter" && searchMovies(search);
 {movies?.length > 0 ? (
   <div className="container">
 {movies.map((movie, index) => (
-<MovieCard key={index} {...movie} />
+<MovieCard key={index} apiUrl={apiUrl} {...movie} />
   ))}
   </div>
 ) : (
