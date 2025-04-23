@@ -8,6 +8,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 import App from "./App.jsx";
 import Login from "./pages/Login.jsx";
+import Checkout from "./pages/Checkout.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

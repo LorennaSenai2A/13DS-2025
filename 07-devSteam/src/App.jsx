@@ -39,7 +39,7 @@ function App() {
     );
   };
 
-  const handleCarrinho = (produto, novaQuantidade) => {
+  const handleUpdateCarrinho = (produto, novaQuantidade) => {
     setCarrinhoItem((itemAnterior) =>
       itemAnterior.map((item) =>
         item.id === produto.id
@@ -55,9 +55,10 @@ function App() {
       <Promotion
         onAddCarrinho={handleAddCarrinho} //adicionando o click para promoção
       />
+
       <CarrinhoOffCanvas
         onRemoveCarrinho={handleRemoveCarrinho}
-        onUpdateCarrinho={handleCarrinho}
+        onUpdateCarrinho={handleUpdateCarrinho}
         carrinhoItem={carrinhoItem}
       />
     </>
